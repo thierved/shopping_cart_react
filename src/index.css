@@ -1,0 +1,61 @@
+@import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto";
+
+.container {
+    font-family:  'Roboto', sans-serif;
+}
+
+.item-container {
+    width: 95%;
+    margin: 1rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 25%;
+    margin: 1.5rem 1%;
+    padding: .5rem;
+    margin-bottom: 5rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+    display: inline-block;
+    width: 100%;
+    height: 250px;
+}
+
+.detail {
+    color: rgba(0, 0, 0, 0.6);
+    height: 55px;
+    display: flex;
+    margin: 10px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    justify-content: space-around;
+}
+
+span {
+    display: inline-block;
+    padding-top: 1rem;
+    font-size: 1.2rem;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.price {
+    width: 40%;
+}
+
+.price::before {
+    content: "$"
+}
+
+.name {
+    width: 60%;
+}
+

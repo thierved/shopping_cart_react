@@ -1,0 +1,165 @@
+[
+    {
+        "id": 1,
+        "name": "apple",
+        "image": "./images/apple.jpg",
+        "price": 3.99
+    },
+    {
+        "id": 2,
+        "name": "apricots",
+        "image": "./images/apricots.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 3,
+        "name": "avocado",
+        "image": "./images/avocado.jpg",
+        "price": 4.99
+    },
+    {
+        "id": 4,
+        "name": "bananas",
+        "image": "./images/bananas.jpg",
+        "price": 4.99
+    },
+    {
+        "id": 5,
+        "name": "blueberries",
+        "image": "./images/blueberries.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 6,
+        "name": "bulb",
+        "image": "./images/bulb.jpg",
+        "price": 1.99
+    },
+    {
+        "id": 7,
+        "name": "carrots",
+        "image": "./images/carrots.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 8,
+        "name": "cherries",
+        "image": "./images/cherries.jpg",
+        "price": 4.99
+    },
+    {
+        "id": 9,
+        "name": "chili",
+        "image": "./images/chili.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 10,
+        "name": "cucumbers",
+        "image": "./images/cucumbers.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 11,
+        "name": "eggplant",
+        "image": "./images/eggplant.jpg",
+        "price": 1.99
+    },
+    {
+        "id": 12,
+        "name": "figs",
+        "image": "./images/figs.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 13,
+        "name": "grapes",
+        "image": "./images/grapes.jpg",
+        "price": 1.99
+    },
+    {
+        "id": 14,
+        "name": "lime",
+        "image": "./images/lime.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 15,
+        "name": "onions",
+        "image": "./images/onions.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 16,
+        "name": "oranges",
+        "image": "./images/oranges.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 17,
+        "name": "peach",
+        "image": "./images/peach.jpg",
+        "price": 1.99
+    },
+    {
+        "id": 18,
+        "name": "pear",
+        "image": "./images/pear.jpg",
+        "price": 3.99
+    },
+    {
+        "id": 19,
+        "name": "pineapple",
+        "image": "./images/pineapple.jpg",
+        "price": 4.99
+    },
+    {
+        "id": 20,
+        "name": "pomegranate",
+        "image": "./images/pomegranate.jpg",
+        "price": 3.99
+    },
+    {
+        "id": 21,
+        "name": "potatoes",
+        "image": "./images/potatoes.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 22,
+        "name": "pumpkins",
+        "image": "./images/pumpkins.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 23,
+        "name": "salad",
+        "image": "./images/salad.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 24,
+        "name": "strawberry",
+        "image": "./images/strawberry.jpg",
+        "price": 2.99
+    },
+    {
+        "id": 25,
+        "name": "sweet peppers",
+        "image": "./images/sweet-peppers.jpg",
+        "price": 0.99
+    },
+    {
+        "id": 26,
+        "name": "tangerines",
+        "image": "./images/tangerines.jpg",
+        "price": 3.99
+    },
+    {
+        "id": 27,
+        "name": "tomatoes",
+        "image": "./images/tomatoes.jpg",
+        "price": 2.99
+    } 
+
+]
