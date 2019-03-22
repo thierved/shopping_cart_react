@@ -1,7 +1,18 @@
 @import "https://fonts.googleapis.com/css?family=Open+Sans|Roboto";
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     font-family:  'Roboto', sans-serif;
+    text-align: center;
+}
+
+.header {
+    background: #eee;
+    height: 5rem;
 }
 
 .item-container {
@@ -13,6 +24,7 @@
 }
 
 .item {
+    position: relative;
     width: 25%;
     margin: 1.5rem 1%;
     padding: .5rem;
@@ -21,7 +33,30 @@
     display: flex;
     flex-direction: column;
     box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+    transition: all .5s ease-in-out;
 }
+
+.item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+
+.popup {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #f25;
+    padding: 5%;
+    cursor: pointer;
+}
+
+.item:hover>.popup {
+    display: inline;
+}
+
 
 .item img {
     display: inline-block;
