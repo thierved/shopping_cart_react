@@ -55,6 +55,7 @@
 
 .item:hover>.popup {
     display: inline;
+    animation: showUp 1s ease-in-out;
 }
 
 
@@ -94,3 +95,12 @@ span {
     width: 60%;
 }
 
+@keyframes showUp {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
+}
