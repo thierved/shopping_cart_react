@@ -5,6 +5,11 @@
     padding: 0;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     font-family:  'Roboto', sans-serif;
     text-align: center;
@@ -12,7 +17,28 @@
 
 .header {
     background: #eee;
-    height: 5rem;
+    padding: 1rem 0;
+}
+
+.header h1 {
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.cart {
+    background-color: #fff;
+    width: 10%;
+    margin-left: 85%;
+    padding: 0.5rem;
+}
+
+.cart:hover {
+    cursor: pointer;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, 0.2);
+}
+
+.cart span {
+    width: 50%;
+    padding: 0.5rem 0;
 }
 
 .item-container {
@@ -24,6 +50,7 @@
 }
 
 .item {
+    display: block;
     position: relative;
     width: 25%;
     margin: 1.5rem 1%;
@@ -37,11 +64,14 @@
 }
 
 .item:hover {
-    transform: translateY(5px);
-    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
     cursor: pointer;
 }
 
+.item:active {
+    box-shadow: none;
+    transform: translateY(5px);
+}
 
 .popup {
     position: absolute;
