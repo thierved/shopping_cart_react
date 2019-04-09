@@ -31,6 +31,7 @@ a {
 }
 
 .cart {
+    position: relative;
     background-color: rgba(138, 233, 30, 0.712);
     width: 10%;
     margin-left: 85%;
@@ -50,6 +51,15 @@ a {
 .cart span {
     width: 50%;
     padding: 0.5rem 0;
+}
+
+.chart-items {
+    position: absolute;
+    top: 5rem;
+    left: 0;
+    background: rgba(255, 34, 86, 0.616);
+    width: 50rem;
+    height: 100rem;
 }
 
 .item-container {
