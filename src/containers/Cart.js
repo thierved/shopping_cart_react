@@ -3,8 +3,10 @@ import { connect } from 'react-redux';
 
 class Cart extends Component {
     renderItem(items) {
-        return items.map(item => {           
-            return <li>{item.name}</li>
+        return items.map(item => { 
+            return (
+                <li><span>{item.name}</span><span>{item.price}</span></li>
+            );
         });
     }
 
