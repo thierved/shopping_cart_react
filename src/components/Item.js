@@ -2,7 +2,8 @@ import React from 'react';
 
 const Item = (props) => {
     return (
-        <div className='item' onClick={() => props.handleClick(props.id)}>
+        <div className='item'
+         onClick={() => props.contains ? props.handleClick(props.id) : null}>
             <span className="popup">Click to add to Cart</span>
             <img src={props.url} alt={props.url}/>
             <div className='detail'>

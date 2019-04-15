@@ -58,9 +58,13 @@ a {
     position: absolute;
     top: 5rem;
     right: 0;
-    background: rgba(82, 224, 16, 0.616);
+    background: #52e010;
     width: 15rem;
     min-height: 5rem;
+}
+
+.chart-items.disable {
+    display: none;
 }
 
 .chart-items li {

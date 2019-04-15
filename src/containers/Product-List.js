@@ -12,7 +12,8 @@ class ProductList extends Component{
             <div className="item-container">
                 {data.map(item => {
                     return <Item name={item.name} id={item.id}
-                    price={item.price} url={item.image} key={item.name}
+                    price={item.price} url={item.image} key={item.id}
+                    contains={this.props.cart.indexOf(item) === -1}
                     handleClick={this.props.addToChart} />
                 })}
             </div>
@@ -24,4 +25,10 @@ const mapDispatchToProps = dispatch => {
     return bindActionCreators({addToChart}, dispatch);
 }
 
-export default connect(null,mapDispatchToProps)(ProductList);
+const mapStateToProps = state => {
+    return {
+        cart: state
+    }
+}
+
+export default connect(mapStateToProps,mapDispatchToProps)(ProductList);
