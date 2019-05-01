@@ -1,12 +1,8 @@
-import {ADD_TO_CHART} from '../actions';
-import data from '../data.json';
+import {cart} from './cartReducer';
+import { combineReducers } from 'redux';
 
-export function addItemToBag(state = [], action) {
-    switch (action.type) {
-        case ADD_TO_CHART:
-            return [...state,
-                 ...data.filter(item => data[item.id] === data[action.payload])];    
-        default:
-            return state;
-    }
-}
+const rootReducer = combineReducers({
+    cart
+});
+
+export default rootReducer;

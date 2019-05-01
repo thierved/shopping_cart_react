@@ -5,9 +5,9 @@ import { createStore } from 'redux';
 
 import App from './App';
 import './index.css';
-import {addItemToBag} from './reducers'
+import rootReducer from './reducers';
 
-const store = createStore(addItemToBag);
+const store = createStore(rootReducer);
 
 ReactDOM.render(
     <Provider store={store}>
