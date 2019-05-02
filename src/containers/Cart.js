@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+import CartItem from '../components/CartItem';
 
 class Cart extends Component {
     constructor(props) {
@@ -11,7 +12,7 @@ class Cart extends Component {
     renderItem(items) {
         return items.map(item => { 
             return (
-                <li key={item.id}><span>{item.name}</span><span>{item.price}</span></li>
+                <CartItem  key={item.id} name={item.name} price={item.price}/>
             );
         });
     }
