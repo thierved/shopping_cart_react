@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
+import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+
 import CartItem from '../components/CartItem';
+import * as cartAction from '../actions'
 
 class Cart extends Component {
     constructor(props) {
@@ -19,7 +22,7 @@ class Cart extends Component {
 
     render() {
         return (
-            <div className="cart" onClick={() => this.setState({ disable: !this.state.disable })}>
+            <div className="cart" onClick={() => this.setState({ disable: true })}>
                 <span>Cart</span>
                 <span>{this.props.bag.length}</span>
                 <div className={this.state.disable ? "chart-items" : "chart-items disable"}>
@@ -36,6 +39,11 @@ function mapStateToProps(state) {
     }
 }
 
+function mapDispatchToProps(dispatch) {
+    return {
+        actions: bindActionCreators(cartAction, dispatch)
+    };
+}
 
 
 export default connect(mapStateToProps)(Cart);
