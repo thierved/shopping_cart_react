@@ -7,20 +7,9 @@ import * as cartAction from '../actions'
 
 class Cart extends Component {
     
-    renderItem(items) {
-        return items.map(item => { 
-            return (
-                <CartItem  key={item.id} name={item.name} price={item.price}/>
-            );
-        });
-    }
-
-    render() {
-        console.log(this.props.bag)
+     render() {
         return (
             <div className="cart">
-                <span>Cart</span>
-                <span>{this.props.bag.length}</span>
                 <table>
                     <thead>
                         <tr>
@@ -36,6 +25,7 @@ class Cart extends Component {
                                 <tr>
                                     <td><img src={item.image} /></td>
                                     <td>{item.name}</td>
+                                    <td>2</td>
                                     <td>{item.price}</td>
                                 </tr>
                             )

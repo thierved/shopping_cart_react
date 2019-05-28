@@ -30,7 +30,28 @@ a {
     color: rgba(0, 0, 0, 0.8);
 }
 
+.cart {
+    margin-top: 10rem;
+}
 
+table {
+    width: 50%;
+    margin: 0 auto;
+}
+
+th {
+    padding: 0.8rem;
+}
+
+tr {
+    padding: 1rem;
+}
+
+tbody img {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+}
 
 .item-container {
     width: 95%;
