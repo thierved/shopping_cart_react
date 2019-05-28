@@ -6,12 +6,7 @@ import CartItem from '../components/CartItem';
 import * as cartAction from '../actions'
 
 class Cart extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            disable: false
-        }
-    }
+    
     renderItem(items) {
         return items.map(item => { 
             return (
@@ -21,13 +16,32 @@ class Cart extends Component {
     }
 
     render() {
+        console.log(this.props.bag)
         return (
-            <div className="cart" onClick={() => this.setState({ disable: true })}>
+            <div className="cart">
                 <span>Cart</span>
                 <span>{this.props.bag.length}</span>
-                <div className={this.state.disable ? "chart-items" : "chart-items disable"}>
-                    <ul>{this.renderItem(this.props.bag)}</ul>
-                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {this.props.bag.map(item => {
+                            return (
+                                <tr>
+                                    <td><img src={item.image} /></td>
+                                    <td>{item.name}</td>
+                                    <td>{item.price}</td>
+                                </tr>
+                            )
+                        })}
+                    </tbody>
+                </table>
             </div>
         );
     }
