@@ -17,6 +17,7 @@ class Cart extends Component {
                             <th>Name</th>
                             <th>Quantity</th>
                             <th>Price</th>
+                            <th></th>
                         </tr>
                     </thead>
                     <tbody>
@@ -26,7 +27,8 @@ class Cart extends Component {
                                     <td><img src={item.image} /></td>
                                     <td>{item.name}</td>
                                     <td>2</td>
-                                    <td>{item.price}</td>
+                                    <td>${item.price}</td>
+                                    <td><button>remove</button></td>
                                 </tr>
                             )
                         })}

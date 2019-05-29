@@ -46,19 +46,30 @@ a {
 table {
     width: 50%;
     margin: 0 auto;
+    border-spacing: 0;    
+    box-shadow: 0px 0px 10px 0px  rgba(63, 63, 63, 0.623);
 }
 
 th {
     padding: 0.8rem;
+    border-bottom: 1px solid rgba(63, 63, 63, 0.623);
 }
 
 tr {
     padding: 1rem;
+
+}
+
+td {
+    border-bottom: 2px solid rgba(172, 172, 172, 0.842);
+    text-align: center;
 }
 
 tbody img {
-    width: 75px;
-    height: 75px;
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 5px auto;
     border-radius: 100%;
 }
 
