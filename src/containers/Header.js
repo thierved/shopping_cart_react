@@ -7,7 +7,7 @@ const Header = () => {
     return (
         <div className="header">
             <h1>Welcome to the shop!</h1>
-            <NavLink to="/cart">Go to cart!</NavLink>
+            <NavLink to="/cart" className="cart-btn">Go to cart!</NavLink>
         </div>
     );
 }
