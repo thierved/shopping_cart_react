@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 
-import CartItem from '../components/CartItem';
-import * as cartAction from '../actions'
+import {removeFromCart} from '../actions'
 
 class Cart extends Component {
     
@@ -23,12 +22,15 @@ class Cart extends Component {
                     <tbody>
                         {this.props.bag.map(item => {
                             return (
-                                <tr>
-                                    <td><img src={item.image} /></td>
+                                <tr key={item.id}>
+                                    <td><img src={item.image} alt={item.name} /></td>
                                     <td>{item.name}</td>
                                     <td>2</td>
                                     <td>${item.price}</td>
-                                    <td><button>remove</button></td>
+                                    <td>
+                                        <button
+                                        onClick={() => this.props.removeFromCart(item.id)}>remove</button>
+                                    </td>
                                 </tr>
                             )
                         })}
@@ -45,11 +47,9 @@ function mapStateToProps(state) {
     }
 }
 
-function mapDispatchToProps(dispatch) {
-    return {
-        actions: bindActionCreators(cartAction, dispatch)
-    };
+const mapDispatchToProps = dispatch => {
+    return bindActionCreators({removeFromCart}, dispatch);
 }
 
 
-export default connect(mapStateToProps)(Cart);
+export default connect(mapStateToProps, mapDispatchToProps)(Cart);
