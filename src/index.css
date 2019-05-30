@@ -73,6 +73,26 @@ tbody img {
     border-radius: 100%;
 }
 
+tbody tr {
+    transition: all .35s ease-in-out;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+tbody tr:hover {
+    background: rgba(190, 245, 138, .85);
+    cursor: pointer;
+}
+
+tbody button {
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-weight: 700;
+    padding: 8px 15px;
+    border: none;
+    border-radius: 48rem;
+    background-color: rgb(255, 94, 94);
+}
+
 .item-container {
     width: 95%;
     margin: 1rem auto;
