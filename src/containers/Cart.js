@@ -1,15 +1,15 @@
 import React, { Component } from 'react';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
+import { NavLink } from 'react-router-dom'
 
 import {removeFromCart} from '../actions'
 
 class Cart extends Component {
     
-     render() {
+    renderTable() {
         return (
-            <div className="cart">
-                <table>
+            <table>
                     <thead>
                         <tr>
                             <th>Image</th>
@@ -36,6 +36,17 @@ class Cart extends Component {
                         })}
                     </tbody>
                 </table>
+        );
+    }
+
+    render() {
+         
+        return (
+            <div className="cart">
+                {(!this.props.bag[0]) ? <h3>Your bag is empty!</h3> : this.renderTable()} 
+                <button className="btn">
+                    <NavLink to="/" className="btn-link">Go Back!</NavLink>
+                </button>
             </div>
         );
     }
