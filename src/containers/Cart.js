@@ -55,7 +55,7 @@ class Cart extends Component {
                 <div className='shopping-info'>
                     <ul>
                         <li>Quantity: <span>{this.props.bag.length}</span></li>
-                        <li>Cost: <span>{this.computeTotal(this.props.bag)}</span></li>
+                        <li>Cost: <span>{parseFloat(Math.round(this.computeTotal(this.props.bag) * 100) / 100).toFixed(2)}</span></li>
                     </ul>
                 </div>
                 {(!this.props.bag[0]) ? <h3>Your bag is empty!</h3> : this.renderTable()} 
