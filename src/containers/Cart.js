@@ -39,10 +39,25 @@ class Cart extends Component {
         );
     }
 
+    computeTotal(items){
+        let total = 0;
+
+        items.map(element => {
+            total += element["price"];
+        });
+        return total;
+    }
+
     render() {
-         
+         console.log()
         return (
             <div className="cart">
+                <div className='shopping-info'>
+                    <ul>
+                        <li>Quantity: <span>{this.props.bag.length}</span></li>
+                        <li>Cost: <span>{this.computeTotal(this.props.bag)}</span></li>
+                    </ul>
+                </div>
                 {(!this.props.bag[0]) ? <h3>Your bag is empty!</h3> : this.renderTable()} 
                 <button className="btn">
                     <NavLink to="/" className="btn-link">Go Back!</NavLink>

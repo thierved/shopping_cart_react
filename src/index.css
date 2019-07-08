@@ -31,7 +31,7 @@ a {
 }
 
 .cart {
-    margin-top: 10rem;
+    margin-top: 6rem;
     display: flex;
     flex-direction: column;
 }
@@ -59,6 +59,10 @@ a {
     display: block;
     padding: 0.5rem;
     text-align: center;
+}
+
+h3 {
+    padding: 1rem;
 }
 
 table {
@@ -195,3 +199,20 @@ span {
     width: 60%;
 }
 
+.shopping-info {
+    margin: 1rem 0;
+}
+
+.shopping-info ul {
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
+.shopping-info ul li {
+    list-style: none;
+    padding: 1.5rem;
+}
+
+span {display: inline-block; padding: 0;margin: 0;}
